@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head >
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="stylesheet" href="./Estilos/css.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barriecito&display=swap" rel="stylesheet">
+    <title>BURGUER PEAK</title>
+</head>
+<body>
+
+    <header id="header">
+    
+            
+        <a class="title_img" href="index.html">
+            <img class="logo" src="./img/logo.jpeg" alt="Logo"> 
+        <span class="titulo">PEAK</span>
+        </a>
+    
+        <nav>
+            <ul class="ul_nav">
+                <li >
+                    <a class="menu" href="./pages/Historia.html">Historia</a>
+                </li>
+                <li >
+                    <a class="menu" href="./pages/precios.html">Precios</a>
+                </li>
+                <li >
+                    <a class="menu" href="./pages/contactos.html">Ubicacion</a>
+                </li>
+                <li ><a class="menu" href="./pages/provedores.html" target="_blank">Proveedores</a></li>
+                
+            </ul>
+        </nav>
+        
+            <a  class="boton" href="index.html">Registrarme</a>
+        
+        
+        
+    </header>
+    <hr>
+    <!--main:contenido principal-->   
+    <main class="main_index">
+        <section class="informacion">
+            <h2 id="subtitulo">BURGUER PEAK</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste nesciunt eius provident animi molestias culpa impedit sed unde voluptas quia et, atque itaque. Quibusdam vitae, aut tempora ipsa cum omnis. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla numquam deleniti reiciendis molestiae dicta voluptas assumenda rem sed reprehenderit quam doloribus ipsam, placeat laudantium eos voluptate quae voluptatem eius. Ipsam.</p>
+            <a href="">ver mas</a>
+        </section>
+
+        <section class="informacion">
+            <article>
+                <h3>hamburguesa de carne</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, eos.</p>
+                <img width="200" src="./img/carne.jpg" alt="Hamburguesa de carne">
+            </article>
+            <br>
+            <article>
+                <h3>hamburguesa de pollo</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, eos.</p>
+                <img width="200" src="./img/pollo.jpeg" alt="Hamburguesa de pollo">
+            </article>
+            <br>
+            <article>
+                <h3>hamburguesa Vegana</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, eos.</p>
+                <img width="200" src="./img/vegana.jpeg" alt="Hamburguesa vegana">
+            </article>
+        </section>
+
+        <section class="informacion3">
+            <div >
+                <label for="carne">hamburguesa de carne</label>
+                <input type="checkbox" name="" id="carne">
+
+                <label for="pollo">hamburguesa de pollo</label>
+                <input type="checkbox" name="" id="pollo">
+
+                <label for="Vegana">hamburguesa vegana</label>
+                <input type="checkbox" name="" id="Vegana">
+            </div>
+            <div>
+                <label for="con tac">Pan con tac</label>
+                <input type="radio" name="tac" id="con tac">
+
+                <label for="sin tac">Pan sin tac</label>
+                <input type="radio" name="tac" id="sin tac">
+            </div>
+            <form>
+                <label for="nombre">Ingrese su nombre:</label>
+                <input id="nombre" type="text"minlength="3" required >
+                <br>
+                <div>
+                    <label for="email">Ingrese su email:</label>
+                <input id="email" type="text" placeholder="joaco.suaman@gmail.com"required>
+                </div>
+
+                <input type="submit"value="Enviar">
+                <input type="reset" value="limpiar">
+            </form>
+        </section>
+    </main>
+    <hr>
+    <!-- Pie de pagina-->
+    <footer class="footer">
+
+        <div class="container">
+
+            <div class="footer-row">
+
+                <div class="footer-link">
+                    <h4>Hamburgueseria</h4>
+                    <ul>
+                        <li><a href="#">Nosotros</a></li>
+                        <li><a href="#">Nuestro servicio</a></li>
+                        <li><a href="#">Politica de privacidad</a></li>
+                        <li><a href="#">Afiliade</a></li>
+                    </ul>
+                </div>    
+                <div class="footer-link">
+                        <h4>ayuda</h4>
+                        <ul>
+                            <li><a href="#">Preguntas</a></li>
+                            <li><a href="#">Compras</a></li>
+                            <li><a href="#">Envios</a></li>
+                            <li><a href="#">Estructura de orden</a></li>
+                        </ul>
+                </div>
+                <div class="footer-link">
+                            <h4>Tienda</h4>
+                            <ul>
+                                <li><a href="#">hamburguesa</a></li>
+                                <li><a href="#">Lomos</a></li>
+                                <li><a href="#">Milanesas</a></li>
+                                <li><a href="#">Pizza Burguer</a></li>
+                            </ul>
+                </div>
+                <div class="footer-link">
+                    <h4>Seguinos</h4>
+                    <div class="social-link">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>    
+            </div>
+        </div>
+    </footer>
+    <a  href="http://www.whatsapp.com/?lang=es_LA" target="_blank"><img class="whatsApp" src="./img/whatsApp.png" alt=""></a>
+</body>
+</html>
