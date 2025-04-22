@@ -3,8 +3,7 @@
 <head >
     <meta charset="UTF-8">
     <meta name="viewport" content="width=, initial-scale=1.0">
-    <link rel="stylesheet" href="./Estilos/css.css">
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"> -->
+    <link rel="stylesheet" href="./Estilos/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,34 +13,27 @@
 <body>
 
     <header id="header">
-    
-            
         <a class="title_img" href="index.html">
-            <img class="logo" src="./img/logo.jpeg" alt="Logo"> 
-        <span class="titulo">PEAK</span>
+            <img class="logo" src="./img/logo.jpeg" alt="Logo">
+            <span class="titulo">PEAK</span>
         </a>
     
-        <nav>
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <label for="menu-toggle" class="menu-icon">&#9776;</label>
+    
+        <nav class="nav-container">
             <ul class="ul_nav">
-                <li >
-                    <a class="menu" href="./pages/Historia.html">Historia</a>
-                </li>
-                <li >
-                    <a class="menu" href="./pages/precios.html">Precios</a>
-                </li>
-                <li >
-                    <a class="menu" href="./pages/contactos.html">Ubicacion</a>
-                </li>
-                <li ><a class="menu" href="./pages/provedores.html" target="_blank">Proveedores</a></li>
-                
+                <li><a class="menu" href="./pages/Historia.html">Historia</a></li>
+                <li><a class="menu" href="./pages/precios.html">Precios</a></li>
+                <li><a class="menu" href="./pages/contactos.html">Ubicación</a></li>
+                <li><a class="menu" href="./pages/provedores.html" target="_blank">Proveedores</a></li>
+                <li><a class="boton" href="index.html">Registrarme</a></li>
             </ul>
         </nav>
-        
-            <a  class="boton" href="index.html">Registrarme</a>
-        
-        
+    
         
     </header>
+
     <hr>
     <!--main:contenido principal-->   
     <main class="main_index">
@@ -55,19 +47,19 @@
             <article>
                 <h3>hamburguesa de carne</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, eos.</p>
-                <img width="200" src="./img/carne.jpg" alt="Hamburguesa de carne">
+                <img class="img_index" width="200" src="./img/carne.jpg" alt="Hamburguesa de carne">
             </article>
             <br>
             <article>
                 <h3>hamburguesa de pollo</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, eos.</p>
-                <img width="200" src="./img/pollo.jpeg" alt="Hamburguesa de pollo">
+                <img class="img_index" width="200" src="./img/pollo.jpeg" alt="Hamburguesa de pollo">
             </article>
             <br>
             <article>
                 <h3>hamburguesa Vegana</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, eos.</p>
-                <img width="200" src="./img/vegana.jpeg" alt="Hamburguesa vegana">
+                <img class="img_index" width="200" src="./img/vegana.jpeg" alt="Hamburguesa vegana">
             </article>
         </section>
 

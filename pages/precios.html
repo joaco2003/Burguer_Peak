@@ -5,84 +5,191 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../Estilos/styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <title>Precios</title>
 </head>
 
 <body id="header_precios">
-    <h1>Precios</h1>
-    <table border="">
-        <tr>
-            <th>Carne</th>
-            <th>Pollo</th>
-            <th>Veganas</th>
-        </tr>
-        <tr>
-            <td>precios</td>
-            <td>precios</td>
-            <td>precios</td>
-        </tr>
-        <tr>
-            <td>precios</td>
-            <td>precios</td>
-            <td>precios</td>
-        </tr>
-        <tr>
-            <td>precios</td>
-            <td>precios</td>
-            <td>precios</td>
-        </tr>
-    </table>
-    <h2>Hamburguesa de Carne</h2>
-    <h3>¿Que contiene?</h3>
-    <p>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit, harum
-        optio distinctio dolores amet voluptatibus exercitationem nisi, possimus
-        sed quo illo explicabo rem saepe, sint ratione provident. Laudantium,
-        atque quia? Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        Repudiandae, sunt. A eum labore blanditiis omnis eius provident optio,
-        vero eligendi! Aperiam, iusto aut error fugiat optio quod inventore dicta
-        eos.
-    </p>
-    <div class="tamaño">
-        <img class="precios_img" src="../img/carne_precios.jpeg" alt="carne" />
-        <img class="precios_img" src="../img/lechuga_precios.jpeg" alt="lechuga" />
-        <img class="precios_img" src="../img/tomate_precios.jpeg" alt="tomate" />
-        <img class="precios_img" src="../img/pan_precios.jpeg" alt="pan de papa" />
-    </div>
-    <h2>Hamburguesa de pollo</h2>
-    <h3>¿Que contiene?</h3>
-    <p>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit, harum
-        optio distinctio dolores amet voluptatibus exercitationem nisi, possimus
-        sed quo illo explicabo rem saepe, sint ratione provident. Laudantium,
-        atque quia? Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        Repudiandae, sunt. A eum labore blanditiis omnis eius provident optio,
-        vero eligendi! Aperiam, iusto aut error fugiat optio quod inventore dicta
-        eos.
-    </p>
-    <div class="tamaño">
-        <img class="precios_img" src="../img/pollo_precios.jpeg" alt="pollo" />
-        <img class="precios_img" src="../img/lechuga_precios.jpeg" alt="lechuga" />
-        <img class="precios_img" src="../img/tomate_precios.jpeg" alt="tomate" />
-        <img class="precios_img" src="../img/pan_precios.jpeg" alt="pan de papa" />
-    </div>
-    <h2>Hamburguesa Vegana</h2>
-    <h3>¿Que contiene?</h3>
-    <p>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit, harum
-        optio distinctio dolores amet voluptatibus exercitationem nisi, possimus
-        sed quo illo explicabo rem saepe, sint ratione provident. Laudantium,
-        atque quia? Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        Repudiandae, sunt. A eum labore blanditiis omnis eius provident optio,
-        vero eligendi! Aperiam, iusto aut error fugiat optio quod inventore dicta
-        eos.
-    </p>
-    <div class="tamaño">
-        <img class="precios_img" src="../img/vegana_precios.jpeg" alt="hamburguesa vegana" />
-        <img class="precios_img" src="../img/lechuga_precios.jpeg" alt="lechuga" />
-        <img class="precios_img" src="../img/tomate_precios.jpeg" alt="tomate" />
-        <img class="precios_img" src="../img/pan_precios.jpeg" alt="pan de papa" />
-    </div>
+    <section class="menu_precios">
+        <h1>Precios</h1>
+
+        <div class="menuu">
+
+            <!-- Hamburguesa de Carne -->
+            <div class="menu_carta">
+                <h2>🍔 Carne Clásica</h2>
+                <p>$5.000</p>
+                <ul>
+                    <li>Carne 150g</li>
+                    <li>Lechuga fresca</li>
+                    <li>Tomate en rodajas</li>
+                    <li>Pan de papa artesanal</li>
+                </ul>
+                <div class="menu-imgs">
+                    <img src="../img/carne_precios.jpeg" alt="carne">
+                    <img src="../img/lechuga_precios.jpeg" alt="lechuga">
+                    <img src="../img/tomate_precios.jpeg" alt="tomate">
+                    <img src="../img/pan_precios.jpeg" alt="pan de papa">
+                </div>
+            </div>
+
+            <!-- Hamburguesa de Pollo -->
+            <div class="menu_carta">
+                <h2>🐔 Pollo Crispy</h2>
+                <p>$4.800</p>
+                <ul>
+                    <li>Filete de pollo </li>
+                    <li>Lechuga</li>
+                    <li>Tomate</li>
+                    <li>Pan de papa</li>
+                </ul>
+                <div class="menu-imgs">
+                    <img src="../img/pollo_precios.jpeg" alt="pollo">
+                    <img src="../img/lechuga_precios.jpeg" alt="lechuga">
+                    <img src="../img/tomate_precios.jpeg" alt="tomate">
+                    <img src="../img/pan_precios.jpeg" alt="pan de papa">
+                </div>
+            </div>
+
+            <!-- Hamburguesa Vegana -->
+            <div class="menu_carta">
+                <h2>🌱 Vegana</h2>
+                <p>$5.200</p>
+                <ul>
+                    <li>Hamburguesa vegetal</li>
+                    <li>Lechuga</li>
+                    <li>Tomate</li>
+                    <li>Pan integral</li>
+                </ul>
+                <div class="menu-imgs">
+                    <img src="../img/vegana_precios.jpeg" alt="vegana">
+                    <img src="../img/lechuga_precios.jpeg" alt="lechuga">
+                    <img src="../img/tomate_precios.jpeg" alt="tomate">
+                    <img src="../img/pan_precios.jpeg" alt="pan de papa">
+                </div>
+
+            </div>
+            <div class="menu_carta">
+                <h2>🌱 Vegana</h2>
+                <p>$5.200</p>
+                <ul>
+                    <li>Hamburguesa vegetal</li>
+                    <li>Lechuga</li>
+                    <li>Tomate</li>
+                    <li>Pan integral</li>
+                </ul>
+                <div class="menu-imgs">
+                    <img src="../img/vegana_precios.jpeg" alt="vegana">
+                    <img src="../img/lechuga_precios.jpeg" alt="lechuga">
+                    <img src="../img/tomate_precios.jpeg" alt="tomate">
+                    <img src="../img/pan_precios.jpeg" alt="pan de papa">
+                </div>
+
+            </div>
+            <div class="menu_carta">
+                <h2>🌱 Vegana</h2>
+                <p>$5.200</p>
+                <ul>
+                    <li>Hamburguesa vegetal</li>
+                    <li>Lechuga</li>
+                    <li>Tomate</li>
+                    <li>Pan integral</li>
+                </ul>
+                <div class="menu-imgs">
+                    <img src="../img/vegana_precios.jpeg" alt="vegana">
+                    <img src="../img/lechuga_precios.jpeg" alt="lechuga">
+                    <img src="../img/tomate_precios.jpeg" alt="tomate">
+                    <img src="../img/pan_precios.jpeg" alt="pan de papa">
+                </div>
+
+            </div>
+
+            <div class="menu_carta">
+                <h2>🍔 Carne Clásica</h2>
+                <p>$5.000</p>
+                <ul>
+                    <li>Carne 150g</li>
+                    <li>Lechuga fresca</li>
+                    <li>Tomate en rodajas</li>
+                    <li>Pan de papa artesanal</li>
+                </ul>
+                <div class="menu-imgs">
+                    <img src="../img/carne_precios.jpeg" alt="carne">
+                    <img src="../img/lechuga_precios.jpeg" alt="lechuga">
+                    <img src="../img/tomate_precios.jpeg" alt="tomate">
+                    <img src="../img/pan_precios.jpeg" alt="pan de papa">
+                </div>
+            </div>
+            <div class="menu_carta">
+                <h2>🍔 Carne Clásica</h2>
+                <p>$5.000</p>
+                <ul>
+                    <li>Carne 150g</li>
+                    <li>Lechuga fresca</li>
+                    <li>Tomate en rodajas</li>
+                    <li>Pan de papa artesanal</li>
+                </ul>
+                <div class="menu-imgs">
+                    <img src="../img/carne_precios.jpeg" alt="carne">
+                    <img src="../img/lechuga_precios.jpeg" alt="lechuga">
+                    <img src="../img/tomate_precios.jpeg" alt="tomate">
+                    <img src="../img/pan_precios.jpeg" alt="pan de papa">
+                </div>
+            </div>
+            <div class="menu_carta">
+                <h2>🍔 Carne Clásica</h2>
+                <p>$5.000</p>
+                <ul>
+                    <li>Carne 150g</li>
+                    <li>Lechuga fresca</li>
+                    <li>Tomate en rodajas</li>
+                    <li>Pan de papa artesanal</li>
+                </ul>
+                <div class="menu-imgs">
+                    <img src="../img/carne_precios.jpeg" alt="carne">
+                    <img src="../img/lechuga_precios.jpeg" alt="lechuga">
+                    <img src="../img/tomate_precios.jpeg" alt="tomate">
+                    <img src="../img/pan_precios.jpeg" alt="pan de papa">
+                </div>
+            </div>
+            <div class="menu_carta">
+                <h2>🍔 Carne Clásica</h2>
+                <p>$5.000</p>
+                <ul>
+                    <li>Carne 150g</li>
+                    <li>Lechuga fresca</li>
+                    <li>Tomate en rodajas</li>
+                    <li>Pan de papa artesanal</li>
+                </ul>
+                <div class="menu-imgs">
+                    <img src="../img/carne_precios.jpeg" alt="carne">
+                    <img src="../img/lechuga_precios.jpeg" alt="lechuga">
+                    <img src="../img/tomate_precios.jpeg" alt="tomate">
+                    <img src="../img/pan_precios.jpeg" alt="pan de papa">
+                </div>
+            </div>
+            <div class="menu_carta">
+                <h2>🍔 Carne Clásica</h2>
+                <p>$5.000</p>
+                <ul>
+                    <li>Carne  150g</li>
+                    <li>Lechuga fresca</li>
+                    <li>Tomate en rodajas</li>
+                    <li>Pan de papa artesanal</li>
+                </ul>
+                <div class="menu-imgs">
+                    <img src="../img/carne_precios.jpeg" alt="carne">
+                    <img src="../img/lechuga_precios.jpeg" alt="lechuga">
+                    <img src="../img/tomate_precios.jpeg" alt="tomate">
+                    <img src="../img/pan_precios.jpeg" alt="pan de papa">
+                </div>
+            </div>
+
+
+
+        </div>
+    </section>
+
     <hr />
     <footer class="footer">
 

@@ -5,39 +5,79 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../Estilos/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
     <title>Provedores</title>
 </head>
-<header>
+<header id="headerr">
     <H1 class="titulo_prove">Provedores</H1>
 </header>
-<body id="header_prove">
-    <main>
-        <ul>
-            <li class="sub_provedores"><a href="https://www.coca-cola.com/ar/es">Coca-cola</a></li>
-            <p>
-                La Coca-Cola surgió en 1886, cuando el farmacéutico John Pemberton fabricó un líquido de color caramelo y lo combinó con agua carbonatada. Los derechos de la fórmula fueron adquiridos en 1888 por el empresario Asa Griggs Candler por tan solo 2300 $. En consecuencia, se constituyó The Coca-Cola Company (KO) en 1892.
-            </p>
-            <img  class="img_historia_1" src="../img/coca-cola.jpeg" alt="">
-            <li class="sub_provedores"><a href="https://www.swiftdirectoacasa.com.ar/">Swift</a></li>
-            <p>
-                La historia de Swift Argentina se remonta a 1907, cuando se incorporó a La Plata Cold Storage. En la actualidad, Swift es una empresa que produce y comercializa alimentos cárnicos, entre ellos hamburguesas
-            </p>
-            <img  class="img_historia_1" src="../img/swift.jpeg" alt="">
-            <li class="sub_provedores"><a href="https://www.fargo.com.ar/">Pan de hamburguesa</a></li>
-            <p>
-                Fargo fue una empresa panificadora argentina que se dedicó a la elaboración y distribución de alimentos. La empresa se originó como "el pan del día" y fue pionera en llevar pan recién horneado a los hogares del país
-            </p>
-            <img  class="img_historia_1" src="../img/fargoo.jpeg" alt="">
+<body  class="bg-warning text-dark">
+    <main class="container py-4">
+        <ul class="list-unstyled">
+    
+        <!-- Coca-Cola -->
+        <li class="mb-5">
+            <div class="d-flex align-items-start flex-column flex-md-row gap-4">
+                <div>
+                    <button class="btn btn-dark mb-2">
+                        <a href="https://www.coca-cola.com.ar/" class="text-white text-decoration-none">Coca-Cola</a>
+                    </button>
+                    <p>
+                        La Coca-Cola surgió en 1886, cuando el farmacéutico John Pemberton fabricó un líquido de color caramelo
+                        y lo combinó con agua carbonatada. Los derechos de la fórmula fueron adquiridos en 1888 por el
+                        empresario Asa Griggs Candler por tan solo 2300 $. En consecuencia, se constituyó The Coca-Cola Company
+                        (KO) en 1892.
+                    </p>
+                </div>
+                <img src="../img/coca-cola.jpeg" class="img-fluid rounded" alt="Coca-Cola" style="max-width: 300px;">
+            </div>
+        </li>
+        
+        <!-- Swift -->
+        <li class="mb-5">
+            <div class="d-flex align-items-start flex-column flex-md-row gap-4">
+                <div>
+                    <button class="btn btn-dark mb-2">
+                        <a href="https://www.swiftdirectocasa.com.ar/" class="text-white text-decoration-none">Swift</a>
+                    </button>
+                    <p>
+                        La historia de Swift Argentina se remonta a 1907, cuando se incorporó a La Plata Cold Storage. En la
+                        actualidad, Swift es una empresa que produce y comercializa alimentos cárnicos, entre ellos
+                        hamburguesas.
+                    </p>
+                </div>
+                <img src="../img/swift.jpeg" class="img-fluid rounded" alt="Swift" style="max-width: 300px;">
+            </div>
+        </li>
+        
+        <!-- Fargo -->
+        <li>
+            <div class="d-flex align-items-start flex-column flex-md-row gap-4">
+                <div>
+                    <button class="btn btn-dark mb-2">
+                        <a href="https://www.fargo.com.ar/" class="text-white text-decoration-none">Pan de hamburguesa</a>
+                    </button>
+                    <p>
+                        Fargo fue una empresa panificadora argentina que se dedicó a la elaboración y distribución de alimentos.
+                        La empresa se originó como “el pan del día” y fue pionera en llevar pan recién horneado a los hogares
+                        del país.
+                    </p>
+                </div>
+                <img src="../img/fargoo.jpeg" class="img-fluid rounded" alt="Fargo" style="max-width: 300px;">
+            </div>
+        </li>
+        
         </ul>
-    </main>
-    <hr>
+        </main>
+        
+    
     <!-- Pie de pagina-->
     <footer class="footer">
 
         <div class="container">
-
+    
             <div class="footer-row">
-
+    
                 <div class="footer-link">
                     <h4>Hamburgueseria</h4>
                     <ul>
@@ -53,7 +93,7 @@
                             <li><a href="#">Preguntas</a></li>
                             <li><a href="#">Compras</a></li>
                             <li><a href="#">Envios</a></li>
-                            <li><a href="#header_prove">Volver arriba</a></li>
+                            <li><a href="#headerr">Volver arriba</a></li>
                         </ul>
                 </div>
                 <div class="footer-link">
@@ -78,5 +118,9 @@
         </div>
     </footer>
     <a  href="http://www.whatsapp.com/?lang=es_LA" target="_blank"><img class="whatsApp" src="../img/whatsApp.png" alt=""></a>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.min.js" integrity="sha384-VQqxDN0EQCkWoxt/0vsQvZswzTHUVOImccYmSyhJTp7kGtPed0Qcx8rK9h9YEgx+" crossorigin="anonymous"></script>
+
 </body>
+
 </html>
