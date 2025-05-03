@@ -1,0 +1,75 @@
+/*Historia*/
+.cuerpo_historia {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to bottom, #f78e1e, #e46d12);
+    color: #222;
+    line-height: 1.6;
+}
+
+.historia {
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px 20px;
+}
+
+.titulo_historia {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #111;
+}
+
+.conte_historia {
+    max-width: 900px;
+    margin: 0 auto 40px;
+    text-align: justify;
+}
+
+.img_historia {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    img {
+        width: 250px;
+        height: 350px;
+        object-fit: cover;
+        border-radius: 15px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+        transition: transform 0.3s ease;
+    }
+    
+}
+.img_historia img:hover {
+    transform: scale(1.10);
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .titulo_historia {
+        font-size: 2.2rem;
+    }
+
+    .img_historia img {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .cuerpo_historia {
+        padding: 20px 10px;
+    }
+
+    .conte_historia {
+        text-align: left;
+    }
+
+    .img_historia {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+  /*Historia*/

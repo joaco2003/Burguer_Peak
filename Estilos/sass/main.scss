@@ -1,0 +1,22 @@
+
+
+
+
+
+  //base
+
+@use "./base/reset";
+
+//componentes
+@use "./componentes/button";
+@use "./componentes/title";
+
+//layout
+@use "./layout/footer";
+@use "./layout/header";
+@use "./layout/menu";
+//paginas
+@use "./paginas/contactos.scss";
+@use "./paginas/historia.scss";
+@use "./paginas/precios.scss";
+

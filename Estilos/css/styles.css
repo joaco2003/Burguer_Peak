@@ -1,5 +1,5 @@
+@charset "UTF-8";
 /*Reset de CSS*/
-
 * {
   margin: 0;
   padding: 0;
@@ -8,17 +8,116 @@
   text-decoration: none;
 }
 
-/**/
 hr {
   border: none;
   background-color: black;
   height: 5px;
 }
 
-/*Index*/
-/* General header layout */
-/* Estructura del header */
-/* Estilos base */
+/* Botón */
+.boton {
+  background-color: red;
+  color: white;
+  padding: 8px 14px;
+  border-radius: 8px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.boton:hover {
+  background-color: darkred;
+}
+
+.titulo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #111;
+  text-shadow: 2px 2px 5px rgba(5, 5, 5, 0.7);
+}
+
+.title_img {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+}
+
+.footer {
+  background-color: rgb(218, 118, 19);
+  padding: 80px 0;
+  text-transform: capitalize;
+  color: white;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer-link {
+  flex: 1 1 250px;
+  padding: 0 15px;
+  margin-bottom: 30px;
+  justify-content: end;
+}
+.footer-link h4 {
+  font-size: 20px;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #ffea00;
+  padding-bottom: 10px;
+  display: inline-block;
+  color: #ffffff;
+}
+.footer-link ul {
+  margin-bottom: 10px;
+}
+.footer-link ul li a {
+  color: #ebd94a;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+.footer-link ul li a:hover {
+  color: #000000;
+}
+
+/* Íconos redes sociales */
+.social-icons {
+  display: flex;
+  gap: 15px;
+  margin-top: 15px;
+}
+.social-icons a {
+  color: #ccc;
+  font-size: 20px;
+  /* transition: color 0.3s; */
+}
+.social-icons a:hover {
+  color: rgb(255, 85, 0);
+}
+
+@media (max-width: 768px) {
+  .footer-row {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-link {
+    text-align: center;
+  }
+  .footer-link h4 {
+    text-align: center;
+  }
+  .social-icons {
+    justify-content: center;
+  }
+}
+/*Footer*/
 #header {
   display: flex;
   justify-content: space-between;
@@ -35,24 +134,10 @@ hr {
   align-items: flex-start;
 }
 
-.title_img {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  text-decoration: none;
-}
-
 .logo {
   height: 40px;
   width: 40px;
   border-radius: 8px;
-}
-
-.titulo {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: #111;
-  text-shadow: 2px 2px 5px rgba(5, 5, 5, 0.7);
 }
 
 /* Menú */
@@ -78,22 +163,8 @@ hr {
   color: #333;
 }
 
-/* Botón */
-.boton {
-  background-color: red;
-  color: white;
-  padding: 8px 14px;
-  border-radius: 8px;
-  font-weight: bold;
-  text-decoration: none;
-}
-
-.boton:hover {
-  background-color: darkred;
-}
-
 /* Ocultar checkbox y mostrar icono */
-input[type="checkbox"] {
+input[type=checkbox] {
   display: none;
 }
 
@@ -111,11 +182,9 @@ input[type="checkbox"] {
     flex-direction: column;
     align-items: flex-start;
   }
-
   .nav-container {
     width: 100%;
   }
-
   .ul_nav {
     display: none;
     flex-direction: column;
@@ -123,38 +192,26 @@ input[type="checkbox"] {
     margin-top: 10px;
     width: 100%;
   }
-
   .boton {
     align-self: flex-end;
-
     margin-top: 10px;
   }
-
   .menu-icon {
     display: block;
   }
-
   /* Mostrar menú al hacer clic */
-  input[type="checkbox"]:checked~.nav-container .ul_nav {
+  input[type=checkbox]:checked ~ .nav-container .ul_nav {
     display: flex;
   }
 }
-
-
-
-
-
-
-/* Estilos generales para todo el body */
 .main_index {
   margin: 0;
   /* Elimina los márgenes por defecto del navegador */
   padding: 0;
   /* Elimina el padding por defecto */
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   /* Fuente legible y moderna */
-
-  background-image: url('https://img.redbull.com/images/c_crop,w_5616,h_2808,x_0,y_0/c_auto,w_1200,h_630/f_auto,q_auto/redbullcom/2018/06/03/feede65a-497e-492b-8155-ba0f0fca2148/everest-nubes');
+  background-image: url("https://img.redbull.com/images/c_crop,w_5616,h_2808,x_0,y_0/c_auto,w_1200,h_630/f_auto,q_auto/redbullcom/2018/06/03/feede65a-497e-492b-8155-ba0f0fca2148/everest-nubes");
   /* Fondo de la página (ajustá el path) */
   background-size: cover;
   /* Hace que la imagen cubra todo el fondo */
@@ -162,7 +219,6 @@ input[type="checkbox"] {
   /* Centra la imagen */
   background-attachment: fixed;
   /* Mantiene el fondo fijo al hacer scroll */
-
   color: #fff;
   /* Color de texto blanco */
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
@@ -205,7 +261,6 @@ h1 {
   /* Fondo negro semitransparente para destacar contenido */
   border-radius: 10px;
   /* Bordes redondeados */
-
 }
 
 /* Imágenes de hamburguesas */
@@ -241,8 +296,8 @@ form {
 }
 
 /* Campos de entrada de texto o email */
-input[type="text"],
-input[type="email"] {
+input[type=text],
+input[type=email] {
   width: 100%;
   padding: 10px;
   margin-top: 5px;
@@ -252,8 +307,8 @@ input[type="email"] {
 }
 
 /* Botones de enviar y limpiar */
-input[type="submit"],
-input[type="reset"] {
+input[type=submit],
+input[type=reset] {
   padding: 10px 20px;
   border: none;
   background-color: #ff5722;
@@ -265,108 +320,10 @@ input[type="reset"] {
 }
 
 /* Efecto hover al pasar el mouse por los botones */
-input[type="submit"]:hover,
-input[type="reset"]:hover {
+input[type=submit]:hover,
+input[type=reset]:hover {
   background-color: #e64a19;
 }
-
-
-
-
-/*Footer*/
-.footer {
-  background-color: rgb(218, 118, 19);
-  padding: 80px 0;
-  text-transform: capitalize;
-  color: white;
-}
-
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
-
-.footer-row {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-.footer-link {
-  flex: 1 1 250px;
-  padding: 0 15px;
-  margin-bottom: 30px;
-  justify-content: end;
-}
-
-.footer-link h4 {
-  font-size: 20px;
-  margin-bottom: 20px;
-  border-bottom: 2px solid #ffea00;
-  padding-bottom: 10px;
-  display: inline-block;
-  color: #ffffff;
-}
-
-.footer-link ul {
-  list-style: none;
-}
-
-.footer-link ul li {
-  margin-bottom: 10px;
-}
-
-.footer-link ul li a {
-  color: #ebd94a;
-  text-decoration: none;
-  transition: color 0.3s;
-}
-
-.footer-link ul li a:hover {
-  color: #000000;
-}
-
-/* Íconos redes sociales */
-.social-icons {
-  display: flex;
-  gap: 15px;
-  margin-top: 15px;
-}
-
-.social-icons a {
-  color: #ccc;
-  font-size: 20px;
-  /* transition: color 0.3s; */
-}
-
-.social-icons a:hover {
-  color: rgb(255, 85, 0);
-}
-
-@media (max-width: 768px) {
-  .footer-row {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .footer-link {
-    text-align: center;
-  }
-
-  .footer-link h4 {
-    text-align: center;
-  }
-
-  .social-icons {
-    justify-content: center;
-  }
-}
-
-/*Footer*/
-
-
-
 
 .whatsApp {
   position: fixed;
@@ -381,14 +338,20 @@ input[type="reset"]:hover {
 }
 
 /*Index*/
+.separacion {
+  height: 10px;
+  width: 90%;
+  background-color: black;
+}
 
 /*contactos*/
 /* General */
-html, body {
+html,
+body {
   height: 100%;
   margin: 0;
   padding: 0;
-  font-family: 'Segoe UI', sans-serif;
+  font-family: "Segoe UI", sans-serif;
 }
 
 .body_contactos {
@@ -408,7 +371,7 @@ html, body {
   font-size: 2.2rem;
   color: #1c1c1c;
   font-weight: 700;
-  text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
 }
 
 .parrafo_contacto {
@@ -443,14 +406,12 @@ html, body {
   font-size: 1rem;
   color: #333;
 }
-
 .direccion_lista li {
   display: flex;
   align-items: center;
   gap: 0.6rem;
   margin-bottom: 1.2rem;
 }
-
 .direccion_lista a {
   color: #0077cc;
   text-decoration: none;
@@ -468,7 +429,6 @@ html, body {
   overflow: hidden;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
 }
-
 .mapa_contacto iframe {
   width: 100%;
   height: 100%;
@@ -482,15 +442,10 @@ main {
   flex: 1;
 }
 
-
 /*contactos*/
-
-
-
-
 /*Historia*/
 .cuerpo_historia {
-  font-family: 'Segoe UI', sans-serif;
+  font-family: "Segoe UI", sans-serif;
   background: linear-gradient(to bottom, #f78e1e, #e46d12);
   color: #222;
   line-height: 1.6;
@@ -522,7 +477,6 @@ main {
   gap: 20px;
   padding: 20px;
 }
-
 .img_historia img {
   width: 250px;
   height: 350px;
@@ -533,7 +487,7 @@ main {
 }
 
 .img_historia img:hover {
-  transform: scale(1.10);
+  transform: scale(1.1);
 }
 
 /* RESPONSIVE */
@@ -541,44 +495,26 @@ main {
   .titulo_historia {
     font-size: 2.2rem;
   }
-
   .img_historia img {
     width: 100%;
     max-width: 300px;
     height: auto;
   }
 }
-
 @media (max-width: 480px) {
   .cuerpo_historia {
     padding: 20px 10px;
   }
-
   .conte_historia {
     text-align: left;
   }
-
   .img_historia {
     flex-direction: column;
     align-items: center;
   }
 }
-
 /*Historia*/
-
-
-
-.separacion {
-  height: 10px;
-  width: 90%;
-  background-color: black;
-}
-
-
-
-
 /*Precios*/
-
 .menu_precios {
   background-color: #fff8f0;
   padding: 40px 20px;
@@ -599,28 +535,25 @@ main {
   padding: 20px;
   transition: transform 0.3s ease;
 }
-
-.menu_carta:hover {
-  transform: translateY(-5px);
-}
-
 .menu_carta h2 {
   font-size: 22px;
   margin-bottom: 10px;
   color: #8b0000;
 }
-
 .menu_carta p {
   font-size: 18px;
   color: #333;
   font-weight: bold;
   margin-bottom: 10px;
 }
-
 .menu_carta ul {
   list-style: none;
   padding: 0;
   margin-bottom: 15px;
+}
+
+.menu_carta:hover {
+  transform: translateY(-5px);
 }
 
 .menu-imgs {
@@ -629,7 +562,6 @@ main {
   justify-content: center;
   gap: 10px;
 }
-
 .menu-imgs img {
   width: 60px;
   height: 60px;
@@ -640,3 +572,4 @@ main {
 
 /*Precios*/
 
+/*# sourceMappingURL=styles.css.map */
