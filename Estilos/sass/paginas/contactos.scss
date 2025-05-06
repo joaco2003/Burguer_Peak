@@ -50,6 +50,27 @@ body {
     padding: 2rem;
     border-radius: 12px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    animation-name: change-color;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes change-color{
+    0% {
+        background-color: #ecdc75;
+    }
+    25%{
+        background-color: #e9d44b;
+    }
+    50%{
+        background-color: #ecd337;
+    }
+    75%{
+        background-color: #f4d510;
+    }
+    100%{
+        background-color: #ffdd00;
+    }
 }
 
 .direccion_lista {
